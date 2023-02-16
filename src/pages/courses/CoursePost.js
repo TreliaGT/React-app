@@ -13,7 +13,6 @@ function CoursePost() {
   // this useEffect will run once
   // similar to componentDidMount()
   useEffect(() => {
-    console.log(process.env.CENTRE_ID);
     fetch("http://127.0.0.1:8000/api/courses/1/" + id)
       .then(res => res.json())
       .then(
@@ -40,7 +39,7 @@ function CoursePost() {
         <section className="container col-xxl-8 px-4 py-5">
             <div className="row flex-lg-row-reverse  g-5 py-5">
                 <div className="col-10 col-sm-8 col-lg-6">
-                    <img  src={"http://127.0.0.1:8000" + items.img_url} className="d-block mx-lg-auto img-fluid" />
+                    <img  src={"http://127.0.0.1:8000" + items.img_url} alt="course" className="d-block mx-lg-auto img-fluid" />
                 </div>
                 <div className="col-lg-6">
                     <h1 className="display-5 fw-bold lh-1 mb-3">{items.name}</h1>

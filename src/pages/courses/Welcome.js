@@ -39,7 +39,7 @@ function Welcome() {
         <div className="row row-cols-1 row-cols-md-4">
           {items.map(item => (
             <div  className="card border-0 shadow" key={item.id}> 
-                <img  src={"http://127.0.0.1:8000" + item.img_url} className="card-img-top w-100" />
+                <img  src={"http://127.0.0.1:8000" + item.img_url} alt="course" className="card-img-top w-100" />
                 <div className="card-body">
                   <h5 className="card-title"> {item.name}</h5>
                   <p className="card-text">{item.short_description}</p>

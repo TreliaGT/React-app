@@ -16,13 +16,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Courses />} />
-         { /*<Route path="login" element={< Login />} />
-          <Route path="register" element={< Register />} />
-  <Route path="cart" element={<Cart />} />*/}
-
-          {/* Using path="*"" means "match anything", so this route
-                acts like a catch-all for URLs that we don't have explicit
-                routes for. */}
+       
           <Route path="/courses/:id" element={<CoursePost/>} />
           <Route path="*" element={<NoMatch />} />
         </Route>
